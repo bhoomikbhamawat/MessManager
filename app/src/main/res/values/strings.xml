@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MessManager</string>
+
+    <string-array name="examples1">
+        <item>Checking Net Connection</item>
+        <item>Connection is slow …</item>
+        <item>Check what is wrong</item>
+        <item>Network not coming? or</item>
+        <item>Signed in to IIT(BHU)?</item>
+    </string-array>
 </resources>
