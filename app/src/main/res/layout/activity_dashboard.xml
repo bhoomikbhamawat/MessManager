@@ -150,6 +150,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/blue"
                 android:layout_columnWeight="1"
+                android:id="@+id/attendance_cardview"
                android:layout_margin="4dp"
                 android:layout_rowWeight="1"
                 app:cardCornerRadius="8dp">
