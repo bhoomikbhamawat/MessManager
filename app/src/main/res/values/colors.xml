@@ -4,14 +4,18 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="black">#0A5B9E</color>
+    <color name="primary_dark">#000000</color>
     <color name="black_color">@android:color/black</color>
     <color name="foreground">@android:color/white</color>
     <color name="background">#ff82B548</color>
+    <color name="background_green">#BFF18B</color>
+    <color name="darkgreen">#376103</color>
     <color name="blue">@android:color/holo_blue_dark</color>
     <color name="orange">@android:color/holo_orange_dark</color>
     <color name="green">@android:color/holo_green_light</color>
     <color name="purple">#404AB4</color>
     <color name="purple_2">#6C66EF</color>
     <color name="purple_3">#59DBC6</color>
+    <color name="accent">#0072AF</color>
 
 </resources>

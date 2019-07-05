@@ -306,6 +306,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
+                android:id="@+id/noticechange_cardview"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:backgroundTint="@color/purple_3"

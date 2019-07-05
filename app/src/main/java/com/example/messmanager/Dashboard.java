@@ -9,7 +9,7 @@ import android.view.View;
 
 public class Dashboard extends AppCompatActivity {
 
-    private CardView attendance;
+    private CardView attendance,notice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         attendance=findViewById(R.id.attendance_cardview);
+        notice=findViewById(R.id.noticechange_cardview);
 
         attendance.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,5 +26,17 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Dashboard.this,NoticeMenu_EditAvtivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 }
