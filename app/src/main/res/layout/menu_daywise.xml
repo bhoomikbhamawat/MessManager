@@ -25,7 +25,9 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="24dp"
-
+            android:clickable="true"
+            android:id="@+id/card_breakfast"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="4dp"
@@ -44,9 +46,12 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="24dp"
+            android:id="@+id/card_lunch"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="4dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_weight="3"
             app:cardBackgroundColor="@color/background_green"
             app:cardUseCompatPadding="true"
@@ -62,6 +67,9 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="24dp"
+            android:id="@+id/card_dinner"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="4dp"

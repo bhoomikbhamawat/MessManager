@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     android:background="@color/foreground"
+    android:fitsSystemWindows="true"
     tools:context=".Dashboard">
 
     <LinearLayout
@@ -15,31 +15,32 @@
         android:paddingLeft="8dp"
         android:paddingTop="14dp"
         android:paddingRight="8dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mess1 - Aryabhatta Mess A"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="24dp"
-            android:textColor="@color/background"
-            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="22 June 2019 - Saturday"
+            android:gravity="center"
+            android:text="Mess1 - Aryabhatta Mess A"
+            android:textColor="@color/background"
             android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:paddingLeft="10dp"
-            android:textStyle="italic"
-            android:textColor="@color/black"
             android:paddingBottom="4dp"
-            />
+            android:text="22 June 2019 - Saturday"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="italic" />
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:scaleType="fitXY"
-            android:src="@drawable/todaycount"/>
+            android:src="@drawable/todaycount" />
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,404 +50,435 @@
             app:cardCornerRadius="12dp"
             app:cardElevation="2.5dp"
             app:cardUseCompatPadding="true"
-            app:contentPadding="1dp"
-            >
+            app:contentPadding="1dp">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
-                app:cardCornerRadius="12dp"
-                >
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="12dp"
-                    android:paddingRight="18dp"
-                    android:weightSum="3">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Breakfast"
-                        android:textColor="@color/background"
-                        android:layout_weight="1"
-                        android:gravity="center"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Lunch"
-                        android:id="@+id/lunch_text"
-                        android:textColor="@color/background"
-                        android:gravity="center"
-                        android:layout_weight="1" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dinner"
-                        android:textColor="@color/background"
-                        android:gravity="center"
-                        android:layout_weight="1" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="18dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Breakfast"
+                            android:textColor="@color/background" />
+
+                        <TextView
+                            android:id="@+id/lunch_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Lunch"
+                            android:textColor="@color/background" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Dinner"
+                            android:textColor="@color/background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="18dp"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+
+                            android:text="756" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="456" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="954" />
+                    </LinearLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="18dp"
-                    >
-                    <TextView
-                        android:layout_width="128dp"
-                        android:layout_height="wrap_content"
-                        android:text="756"
-
-                        android:gravity="center"/>
-                    <TextView
-                        android:layout_width="25dp"
-                        android:layout_height="wrap_content"
-                        android:text="456"
-                        android:gravity="center"
-                        android:layout_weight="1" />
-                    <TextView
-                        android:layout_width="27dp"
-                        android:layout_height="wrap_content"
-                        android:text="954"
-                        android:gravity="center"
-                        android:layout_weight="1" />
-                </LinearLayout>
-            </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
         </androidx.cardview.widget.CardView>
 
-        <GridLayout
-            android:id="@+id/mainGrid"
-            android:rowCount="3"
-            android:columnCount="2"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
-            android:layout_weight="8"
+        <LinearLayout
+            android:id="@+id/ll"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp">
+            android:layout_height="match_parent"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-            <!-- ROW 1  -->
-            <!-- COLUMN 1  -->
-
-
-
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/blue"
-                android:layout_columnWeight="1"
-                android:id="@+id/attendance_cardview"
-               android:layout_margin="4dp"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:textAlignment="center"
-                        android:text="Attendance"
-                       android:textColor="@color/foreground"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- COLUMN 2  -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:backgroundTint="@color/blue"
-                android:layout_rowWeight="1"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:textAlignment="center"
-                        android:text="Cancellation"
-                        android:textColor="@color/foreground"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-
-            <!-- ROW 2  -->
-            <!-- COLUMN 1  -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/purple_2"
-                android:layout_columnWeight="1"
-                android:layout_margin="4dp"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:textAlignment="center"
-                        android:text="Student Info"
-                        android:textColor="@color/foreground"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- COLUMN 2  -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:backgroundTint="@color/purple_2"
-                android:layout_rowWeight="1"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                   android:gravity="center"
-                    android:layout_width="wrap_content"
-                    android:weightSum="1"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:text="Mess Change Request"
-                        android:textColor="@color/foreground"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <!-- ROW 3  -->
-            <!-- COLUMN 1  -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/purple_3"
-                android:layout_columnWeight="1"
-                android:layout_margin="4dp"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:textAlignment="center"
-                        android:text="Feedback"
-                        android:textColor="@color/black_color"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- COLUMN 2  -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:id="@+id/noticechange_cardview"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:backgroundTint="@color/purple_3"
-                android:layout_rowWeight="1"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="8dp">
-
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-
-                    <TextView
-                        android:textAlignment="center"
-                        android:text="Notice/Menu"
-                        android:textColor="@color/black_color"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-        </GridLayout>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
-            app:cardBackgroundColor="@color/purple"
-            app:cardElevation="2.5dp"
-            app:cardUseCompatPadding="true"
-            app:cardCornerRadius="8dp"
-            app:contentPadding="1dp">
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="8dp"
-                android:padding="16dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="2dp"
-                    android:paddingRight="8dp"
-                    android:weightSum="10"
-                    android:layout_marginBottom="2dp">
-                    <androidx.appcompat.widget.AppCompatEditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="Enter Roll No."
-                        android:layout_weight="1"
-                        android:inputType="number"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/ic_remove_circle_outline_black_24dp"
-                        android:layout_gravity="center"
-                        android:scaleType="fitCenter"
-                        android:paddingRight="4dp"
-                        android:layout_weight="2"
-                        android:padding="4dp"
-                        android:layout_marginLeft="8dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:layout_weight="2"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textSize="30dp"
-                        android:textStyle="bold" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/ic_add_circle_outline_black_24dp"
-                        android:layout_gravity="center"
-                        android:scaleType="fitCenter"
-                        android:layout_weight="2"
-                        android:paddingRight="4dp"
-                        android:padding="4dp"
-                        android:layout_marginRight="8dp"
-                        />
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:text="Add Extra" />
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="4dp"
-            app:cardBackgroundColor="@color/purple_2"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="2.5dp"
-            app:cardUseCompatPadding="true"
-            app:contentPadding="1dp"
-            >
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:backgroundTint="@color/purple"
-            android:layout_rowWeight="1"
-            android:padding="16dp"
-            app:cardCornerRadius="12dp"
-            >
             <LinearLayout
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:layout_margin="16dp"
-                android:orientation="vertical"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/foreground"
-                android:text="Please Enter the Previous Expense Of Last Month"/>
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/attendance_cardview"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/attendance" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Attendance"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+
+                            android:padding="10dp"
+                            android:src="@drawable/cancellation" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Cancellation"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        </androidx.cardview.widget.CardView>
-        
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/student_info" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Student Info"
+                            android:textStyle="bold" />
 
 
-        
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+
+                            android:padding="10dp"
+                            android:src="@drawable/mess_change" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Mess Change Request"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:id="@+id/feedback_cardview"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:src="@drawable/feedback" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Feedback"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:id="@+id/noticechange_cardview"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+
+                            android:src="@drawable/mess_board" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Notice/Menu Board"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/purple"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2.5dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="1dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="8dp"
+                        android:weightSum="10">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Enter Roll No."
+                            android:inputType="number" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="2"
+                            android:padding="4dp"
+                            android:paddingRight="4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:padding="4dp"
+                            android:paddingRight="4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="Add Extra" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="110dp"
+                            android:padding="10dp"
+                            android:src="@drawable/expenses" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Please enter the previous Expense of last month"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>
