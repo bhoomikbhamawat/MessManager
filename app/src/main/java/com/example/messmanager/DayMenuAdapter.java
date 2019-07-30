@@ -64,14 +64,12 @@ public class DayMenuAdapter extends RecyclerView.Adapter<DayMenuAdapter.ViewHold
             public void onClick(View view) {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
                 alertDialogBuilder.setTitle("Edit Breakfast");
-                alertDialogBuilder.setCancelable(false);
+
                 LayoutInflater layoutInflater = LayoutInflater.from(mContext);
                 popupInputDialogView = layoutInflater.inflate(R.layout.dialog_menucard, null);
                 editmenu=popupInputDialogView.findViewById(R.id.textDialog);
                 save=popupInputDialogView.findViewById(R.id.acceptButton);
                 editmenu.setText(uploadCurrent.getBreakfast());
-
-
 
                 // Set the inflated layout view object to the AlertDialog builder.
                 alertDialogBuilder.setView(popupInputDialogView);
@@ -79,11 +77,9 @@ public class DayMenuAdapter extends RecyclerView.Adapter<DayMenuAdapter.ViewHold
                 // Create AlertDialog and show.
                 final AlertDialog alertDialog = alertDialogBuilder.create();
                 alertDialog.show();
-
                 save.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
                         mDatabaseRef = FirebaseDatabase.getInstance().getReference("Mess");
                         mDatabaseRef.child("Mess1").child("board_sheet").child("menu_board").child(day).addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
@@ -98,7 +94,6 @@ public class DayMenuAdapter extends RecyclerView.Adapter<DayMenuAdapter.ViewHold
                                         }
                                     }
                                 });
-
                             }
 
                             @Override
@@ -107,14 +102,102 @@ public class DayMenuAdapter extends RecyclerView.Adapter<DayMenuAdapter.ViewHold
 
                             }
                         });
-
                     }
-
                 });
+            }
+        });holder.lunch_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+                alertDialogBuilder.setTitle("Edit Lunch");
 
+                LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+                popupInputDialogView = layoutInflater.inflate(R.layout.dialog_menucard, null);
+                editmenu=popupInputDialogView.findViewById(R.id.textDialog);
+                save=popupInputDialogView.findViewById(R.id.acceptButton);
+                editmenu.setText(uploadCurrent.getLunch());
+
+                // Set the inflated layout view object to the AlertDialog builder.
+                alertDialogBuilder.setView(popupInputDialogView);
+
+                // Create AlertDialog and show.
+                final AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
+                save.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Mess");
+                        mDatabaseRef.child("Mess1").child("board_sheet").child("menu_board").child(day).addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                dataSnapshot.getRef().child("lunch").setValue(editmenu.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful())
+                                        {
+                                            alertDialog.dismiss();
+                                            Toast.makeText(mContext,"Succesfully Changed",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+                                Toast.makeText(mContext, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+                    }
+                });
+            }
+        });holder.dinner_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mContext);
+                alertDialogBuilder.setTitle("Edit Dinner");
+
+                LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+                popupInputDialogView = layoutInflater.inflate(R.layout.dialog_menucard, null);
+                editmenu=popupInputDialogView.findViewById(R.id.textDialog);
+                save=popupInputDialogView.findViewById(R.id.acceptButton);
+                editmenu.setText(uploadCurrent.getDinner());
+
+                // Set the inflated layout view object to the AlertDialog builder.
+                alertDialogBuilder.setView(popupInputDialogView);
+
+                // Create AlertDialog and show.
+                final AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
+                save.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Mess");
+                        mDatabaseRef.child("Mess1").child("board_sheet").child("menu_board").child(day).addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                dataSnapshot.getRef().child("dinner").setValue(editmenu.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful())
+                                        {
+                                            alertDialog.dismiss();
+                                            Toast.makeText(mContext,"Succesfully Changed",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+                                Toast.makeText(mContext, databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+
+                            }
+                        });
+                    }
+                });
             }
         });
-
     }
 
 

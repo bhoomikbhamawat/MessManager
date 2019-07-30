@@ -36,7 +36,7 @@
             android:elevation="0dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/card_view"
+                android:id="@+id/noticechange_cardview"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -64,7 +64,7 @@
                         android:paddingRight="18dp">
 
 
-                        <TextView
+                        <EditText
                             android:id="@+id/notice_board_text"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -96,6 +96,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/button_noticechange"
 
                     android:text="OK" />
             </LinearLayout>
