@@ -6,7 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+//Main Dashboard.App will be recreated in Flutte <Smile Emoji>
 public class Dashboard extends AppCompatActivity {
 
     private CardView attendance,notice,feedback;
